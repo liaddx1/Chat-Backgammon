@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Style TargetType="RadioButton" x:Key="ToggleBtn">
+        <Setter Property="IsEnabled" Value="False" />
+        <Setter Property="IsChecked" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+           
+                <ControlTemplate TargetType="RadioButton">
+                <Border  Height="{TemplateBinding Height}" Width="{TemplateBinding Width}"
+                        Padding="5"  Background="{StaticResource DimBrush}" CornerRadius="8">
+                        <Border HorizontalAlignment="Left" Background="Transparent">
+                            <Rectangle Fill="{StaticResource ResourceKey=PrimeryBrush}" 
+                                     MaxHeight="{TemplateBinding Height}" MaxWidth="{TemplateBinding Height}"
+                                     MinHeight="{TemplateBinding Height}" MinWidth="{TemplateBinding Height}" />
+                        </Border>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        
+        <Style.Resources>
+            <ControlTemplate TargetType="RadioButton" x:Key="MyTurnTemplate">
+                <Border  Height="{TemplateBinding Height}" Width="{TemplateBinding Width}"
+                                Padding="3" Background="{StaticResource BrightBrush}" CornerRadius="5">
+                    <Border HorizontalAlignment="Right" Background="Transparent">
+                        <Rectangle  Fill="{StaticResource ComplimentaryBrush}" 
+                                     MaxHeight="{TemplateBinding Height}" MaxWidth="{TemplateBinding Height}"
+                                     MinHeight="{TemplateBinding Height}" MinWidth="{TemplateBinding Height}"/>
+                    </Border>
+                </Border>
+            </ControlTemplate>
+        </Style.Resources>
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Template" Value="{StaticResource MyTurnTemplate}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

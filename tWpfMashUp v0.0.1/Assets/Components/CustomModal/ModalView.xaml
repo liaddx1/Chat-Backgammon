@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="tWpfMashUp_v0._0._1.ModalView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d">
+
+    <Canvas x:Name="cnvs">
+        <Border Background="{StaticResource BrightBrush}" CornerRadius="25" Height="200" Width="350"  ClipToBounds="True" x:Name="modalBorder">
+            <Border.Clip>
+                <RectangleGeometry RadiusY="15" RadiusX="15" Rect="0,0,350,200" />
+            </Border.Clip>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="TopGrid" Background="{StaticResource AccentBrush}" >
+                    <TextBlock x:Name="tbTitle" HorizontalAlignment="Left" Margin="15,0,0,0" Text="{Binding Title}"
+                               VerticalAlignment="Center" FontSize="19" Foreground="White" TextWrapping="Wrap" 
+                               FontWeight="Medium"/>
+                </Grid>
+                <TextBlock Grid.Row="1" x:Name="tbCaption" Text="{Binding Caption}" HorizontalAlignment="Left" Margin="15,15,0,0" 
+                                FontSize="16" Foreground="LightGray" TextWrapping="Wrap" VerticalAlignment="Top"
+                               FontWeight="Medium"/>
+
+                <Grid Grid.Row="2"   Background="{StaticResource ComplimentaryBrush}"  VerticalAlignment="Stretch" 
+                    HorizontalAlignment="Stretch" x:Name="Panel">
+                </Grid>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="Primery">#292b2f</Color>
+    <SolidColorBrush x:Key="PrimeryBrush" Color="{StaticResource Primery}" />
+
+    <Color x:Key="Accent">#2f3136</Color>
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource Accent}" />
+
+    <Color x:Key="Complimentary">#36393f</Color>
+    <SolidColorBrush x:Key="ComplimentaryBrush" Color="{StaticResource Complimentary}" />
+
+    <Color x:Key="Dim">#252525</Color>
+    <SolidColorBrush x:Key="DimBrush" Color="{StaticResource Dim}" />
+
+    <Color x:Key="Bright">#53535e</Color>
+    <SolidColorBrush x:Key="BrightBrush" Color="{StaticResource Bright}" />
+
+    <Color x:Key="Active">#3bff6f</Color>
+    <SolidColorBrush x:Key="ActiveBrush" Color="{StaticResource Active}" />
+
+</ResourceDictionary>

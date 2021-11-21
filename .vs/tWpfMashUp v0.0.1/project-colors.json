@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6be76092-230e-4553-aee6-66d1b5d8a96e": {
+      "ProjectGuid": "6be76092-230e-4553-aee6-66d1b5d8a96e",
+      "DisplayName": "tWpfMashUp v0.0.1",
+      "ColorIndex": 0
+    },
+    "1f2298d5-c13e-423d-84c3-85a3f3782d11": {
+      "ProjectGuid": "1f2298d5-c13e-423d-84c3-85a3f3782d11",
+      "DisplayName": "signalRChatApiServer",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

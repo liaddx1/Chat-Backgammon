@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="MyCombobox" TargetType="{x:Type ComboBox}" >
+        <Setter Property="Template" >
+            <Setter.Value>
+                <ControlTemplate TargetType="ComboBox">
+                        <Grid Background="Transparent" Height="25">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Test"  Foreground="White"/>
+                            <Polygon Points="0,0 5,10 10,0" VerticalAlignment="Center" Grid.Column="1" Stroke="{StaticResource BrightBrush}" StrokeThickness="3"/>
+                        </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
