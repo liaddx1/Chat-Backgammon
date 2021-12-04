@@ -23,6 +23,7 @@ namespace signalRChatApiServer
             services.AddTransient<IChatsRepository, ChatsReposatory>();
             services.AddTransient<IUsersRepository, UsersReposatory>();
             services.AddTransient<IMassegesReposatory, MassegesReposatory>();
+
             string connectionString = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<TalkBackChatContext>(options => options.UseSqlServer(connectionString));
             services.AddSignalR();
